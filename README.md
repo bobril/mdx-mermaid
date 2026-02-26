@@ -2,6 +2,10 @@
 
 Mermaid code block integration for `@bobril/mdx`.
 
+## Example
+
+Live example: [https://bobril.com/mdx-mermaid/](https://bobril.com/mdx-mermaid/)
+
 ## Usage
 
 ```ts
