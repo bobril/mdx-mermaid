@@ -1,0 +1,39 @@
+{
+    "name": "@bobril/mdx-mermaid",
+    "version": "1.0.0",
+    "description": "Mermaid code block installer for @bobril/mdx",
+    "main": "index.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bobril/mdx-mermaid.git"
+    },
+    "keywords": [
+        "bobril",
+        "mdx",
+        "mermaid"
+    ],
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 120
+    },
+    "author": "Bobris",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bobril/mdx-mermaid/issues"
+    },
+    "homepage": "https://github.com/bobril/mdx-mermaid#readme",
+    "dependencies": {
+        "@bobril/mdx": "*",
+        "@bobril/mermaid": "*",
+        "bobril": "*"
+    },
+    "overrides": {
+        "mermaid": "11.12.2"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.3"
+    },
+    "scripts": {
+        "build": "rm -rf docs && bb build"
+    }
+}

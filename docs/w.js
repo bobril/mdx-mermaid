@@ -1,0 +1,1 @@
+(function(e){"use strict";var t={ArchitectureModule:ArchitectureModule,createArchitectureServices:createArchitectureServices};__bbb.v=t}).call(this)

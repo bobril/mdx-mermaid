@@ -1,0 +1,1 @@
+(function(_){"use strict";var a=__bbb._d;var e=__bbb.ae;var r=__bbb.be;var s=__bbb.ce;var n=__bbb.Mb;var c={parser:a,get db(){return new e},renderer:r,styles:s,init:n(_=>{_.class||(_.class={});_.class.arrowMarkerAbsolute=_.arrowMarkerAbsolute},"init")};var u={diagram:c};__bbb.J=u}).call(this)

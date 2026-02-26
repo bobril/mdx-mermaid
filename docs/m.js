@@ -1,0 +1,1 @@
+(function(e){"use strict";var _=__bbb.Mb;var n=__bbb.dc;var t=_((e,_)=>{let t;_==="sandbox"&&(t=n("#i"+e));const s=_==="sandbox"?n(t.nodes()[0].contentDocument.body):n("body");const d=s.select(`[id="${e}"]`);return d},"getDiagramElement");__bbb.Cc=t;__bbb.l=undefined}).call(this)
