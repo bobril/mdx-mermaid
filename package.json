@@ -1,6 +1,6 @@
 {
     "name": "@bobril/mdx-mermaid",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Mermaid code block installer for @bobril/mdx",
     "main": "index.ts",
     "repository": {
@@ -23,6 +23,7 @@
     },
     "homepage": "https://github.com/bobril/mdx-mermaid#readme",
     "dependencies": {
+        "@bobril/highlighter": "^1.1.2",
         "@bobril/mdx": "*",
         "@bobril/mermaid": "*",
         "bobril": "*"

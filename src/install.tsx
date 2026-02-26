@@ -3,17 +3,18 @@ import * as mdx from "@bobril/mdx";
 import * as mermaid from "@bobril/mermaid";
 
 export function install(wrapCodeBlock?: b.IComponentFactory<mdx.IMdxCodeData>) {
-    if (wrapCodeBlock === undefined) wrapCodeBlock = mdx.defaultComponents.CodeBlock;
+    const baseCodeBlock =
+        typeof wrapCodeBlock === "function" ? wrapCodeBlock : (mdx.defaultComponents.CodeBlock ?? mdx.mdxCodeBlock);
 
     mdx.defaultComponents.CodeBlock = (data?: mdx.IMdxCodeData, children?: b.IBobrilChildren) => {
         var lang = data?.info || "";
-        if (lang.toLowerCase() !== "mermaid") return wrapCodeBlock!(data, children);
+        if (lang.toLowerCase() !== "mermaid") return baseCodeBlock(data, children);
         return (
             <b.ErrorBoundary
                 fallback={(e) => (
                     <>
                         <div>Mermaid error: {(e as Error).message}</div>
-                        {wrapCodeBlock!(data, children)}
+                        {baseCodeBlock(data, children)}
                     </>
                 )}
             >

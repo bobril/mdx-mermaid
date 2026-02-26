@@ -1,7 +1,10 @@
 import * as b from "bobril";
 import * as mdx from "@bobril/mdx";
+import * as mdxCodeBlock from "@bobril/mdx/highlighter";
+import * as styles from "@bobril/highlighter/styles";
 import { install } from "./index";
 
+mdxCodeBlock.setDefaultCodeBlock(styles.docco);
 install();
 
 const releaseFlow = [
